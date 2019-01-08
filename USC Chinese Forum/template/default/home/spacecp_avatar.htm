@@ -1,0 +1,414 @@
+<!--{template common/header}-->
+<!--{subtemplate home/spacecp_header}-->
+<!--{hook/spacecp_avatar_top}-->
+<script type="text/javascript">
+    function updateavatar() {
+        window.location.href = document.location.href.replace('&reload=1', '') + '&reload=1';
+    }
+    <!--{if !$reload}-->
+    saveUserdata('avatar_redirect', document.referrer);
+    <!--{/if}-->
+</script>
+<form id="avatarform" enctype="multipart/form-data" method="post" autocomplete="off" action="home.php?mod=spacecp&ac=avatar&ref">
+    <table cellspacing="0" cellpadding="0" class="tfm">
+        <caption>
+            <span id="retpre" class="y xi2"></span>
+            <h2 class="xs2">{lang current_my_space}</h2>
+            <p>{lang setting_avatar_message}</p>
+        </caption>
+        <tr>
+            <td>
+                <!--{avatar($space[uid],big)}-->
+            </td>
+        </tr>
+    </table>
+
+    <table cellspacing="0" cellpadding="0" class="tfm">
+        <caption>
+            <h2 class="xs2">{lang setting_my_new_avatar}</h2>
+            <p>{lang setting_my_new_avatar_message}</p>
+        </caption>
+        <tr>
+            <td>
+                <div id="avatardesigner">
+                    <div id="avatarfileselector">
+                        <input type="file" name="Filedata" id="avatarfile" accept="image/*" onchange="this.form.submit();" />
+                    </div>
+                    <div id="avataradjuster">
+                        <img id="avatarimage" style="visibility: hidden;" onload="forceSelectorInsideAvatar();" />
+                        <canvas id="avatarcanvas" style="position: absolute; top: 0px; left: 0px;"></canvas>
+                        <div id="widgetparent" style="position: absolute; left: 0px; top: 0px;">
+                            <div id="selector" class='ui-widget-content' style="position: absolute; width: 120px; height: 120px; overflow:hidden; cursor: move; border: 1px solid lightgrey; background-color: transparent; background-image: none;">
+                            </div>
+                        </div>
+                        
+                        <div class="backfileselectiondiv">
+                        		<input type="button" name="backfileselection" class="backfileselection" value="{lang back_file_selection}" onclick="showAvatarFileSelector();" />
+                        </div>
+                        
+                        <div id="slider" style="height: 0px; position: absolute; right: 9px; top: 105px; width: 100px;"></div>
+                        
+                        <div class="saveAvatardiv">
+                        	<input type="submit" name="confirm" value="{lang confirms}" class="saveAvatar" style="" onclick="saveAvatar();" />
+                        </div>
+                        
+                        <input type="hidden" id="avatar1" name="avatar1" />
+                        <input type="hidden" id="avatar2" name="avatar2" />
+                        <input type="hidden" id="avatar3" name="avatar3" />
+                    </div>
+                    <div id="avatardisplayer">
+                        <canvas id="avatardisplaycanvas"></canvas>
+                        
+                        <div class="finishbuttondiv">
+                        		<input type="button" value="{lang finished}" class="finishbutton" onclick="location.reload(true);" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" name="formhash" value="{FORMHASH}" />
+</form>
+
+<link rel="stylesheet" href="static/image/common/jquery-ui.css?{VERHASH}" />
+
+<script src="static/js/jquery-1.11.3.min.js?{VERHASH}"></script>
+<script src="static/js/jquery-ui.min.js?{VERHASH}"></script>
+
+<script type="text/javascript">
+    jQuery.noConflict();
+    var data = "{echo implode(",", $uc_avatarflash);}".split(',');
+    var dwidth = data[data.indexOf('width')+1];
+    var dheight = data[data.indexOf('height')+1];
+    jQuery('#avatardesigner').width(dwidth-20);
+    jQuery('#avatardesigner').height(dheight-25);
+    jQuery('#widgetparent').width(dwidth-150);
+    jQuery('#widgetparent').height(dheight-25);
+    jQuery('#selector').width(150);
+    jQuery('#selector').height(150);
+    
+    
+    jQuery('#avatarfileselector').width(dwidth-20);
+    jQuery('#avatarfileselector').height(dheight-25);
+    jQuery('#avatarfile').width(dwidth-20);
+    jQuery('#avatarfile').height(dheight-25);
+    
+    // http://stackoverflow.com/questions/6908094/rectangle-on-html5-canvas-is-stretched
+    jQuery('#avatarcanvas').attr('width', (dwidth-150));
+    jQuery('#avatarcanvas').attr('height', dheight-25);
+    jQuery('#avatardisplaycanvas').attr('width', dwidth-20);
+    jQuery('#avatardisplaycanvas').attr('height', dheight-25);
+    var src = data[data.indexOf('src')+1].replace('images/camera.swf?inajax=1','index.php?m=user&a=uploadavatar');
+    $('avatarform').action = src; 
+    $('avatarform').target ='uploadframe'; 
+
+    jQuery(document).ready(function () {
+        jQuery("#selector")
+            .draggable({ containment: "parent", drag: function (event, ui) { refreshAvatarCanvas(ui.position); }, stop: function() { forceSelectorInsideAvatar(); } })
+            .resizable({ containment: "parent", resize: function (event, ui) { refreshAvatarCanvas(ui.position); }, stop: function() { forceSelectorInsideAvatar(); }  })
+            .hover(
+                function () { jQuery(this).css({ "border-color": "red" }); },
+                function () { jQuery(this).css({ "border-color": "rgba(255, 0, 0, 0.6)" }); }
+            );
+        jQuery("#slider").slider({
+            min: 0,
+            max: 100,
+            value: 50,
+            slide: function(event, ui) {
+                forceSelectorInsideAvatar();
+            }
+        });
+        jQuery("#slider").append("<div style='position: absolute; top: -2px; left: 0px; width: 3px; height: 6px; background-color: black;'>&nbsp;</div>" );
+        jQuery("#slider").append("<div style='position: absolute; top: -2px; left: 50px; width: 3px; height: 6px; background-color: black;'>&nbsp;</div>" );
+        jQuery("#slider").append("<div style='position: absolute; top: -2px; left: 100px; width: 3px; height: 6px; background-color: black;'>&nbsp;</div>" );
+    });
+
+    function uploadAvatarDone() {
+        var iframe = $('uploadframe'); 
+        var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        if (!iframeDocument.body) return;
+        var imageSrc = iframeDocument.body.innerHTML;
+        if (!imageSrc) return;
+
+        if (imageSrc.indexOf('/')===-1) { // server returns error message
+            if (imageSrc!=-4) { // ie11 bug?: called twice, the value in the second time is -4
+                alert(imageSrc);
+            }
+            return;
+        }
+        // http://stackoverflow.com/questions/1703228/how-to-clear-file-input-with-javascript
+        try {
+            var av = $('avatarfile');
+            av.value = '';
+            if(av.value){
+                av.type = "text";
+                av.type = "file";
+            }
+        } catch(e){}
+        jQuery('#avatarfileselector').hide();
+        jQuery('#avatardisplayer').hide();
+        jQuery('#avataradjuster').show();
+        jQuery('#selector').css('left', Math.floor((dwidth-300)/2));
+        jQuery('#selector').css('top', Math.floor((dheight-150)/2));
+        jQuery('#selector').width(150);
+        jQuery('#selector').height(150);
+        // http://stackoverflow.com/questions/1077041/refresh-image-with-a-new-one-at-the-same-url
+        imageSrc += "?" + (new Date());
+        $('avatarimage').src = imageSrc;
+        jQuery("#slider").slider('value', 50);
+    }
+
+    function showAvatarFileSelector() {
+        $('avatarimage').src = null;
+        clearAvatar();
+        $('avataradjuster').style.display = 'none'; 
+        $('avatarfileselector').style.display = 'block';
+    }
+
+    function getAvatarDimension() {
+        var factor = jQuery('#slider').slider('option', 'value');
+        var cw = jQuery('#widgetparent').width();
+        var ch = jQuery('#widgetparent').height();
+        var iw = jQuery('#avatarimage').width();
+        var ih = jQuery('#avatarimage').height();
+        var minw = 48;
+        var minh = 48;
+        var midw = Math.min(Math.max(iw, 48), cw);
+        var midh = Math.min(Math.max(ih, 48), ch);
+        var maxw = Math.max(Math.max(iw, 48), cw);
+        var maxh = Math.max(Math.max(ih, 48), ch);
+        var minr = Math.max(minw/iw, minh/ih);
+        var midr = Math.max(midw/iw, midh/ih);
+        var maxr = Math.max(maxw/iw, maxh/ih);
+        if (factor<=50) {
+            r = (minr * (50-factor) + midr * factor)/50;
+        }
+        else {
+            r = (midr * (100-factor) + maxr * (factor-50))/50;
+        }
+        var aw = r*iw;
+        var ah = r*ih;
+        var al = (cw-aw)/2;
+        var at = (ch-ah)/2;
+        var sd = getSelectorDimention();
+        if (aw>cw) al = (cw-aw)/(cw-sd.width)*sd.left;
+        if (ah>ch) at = (ch-ah)/(ch-sd.height)*sd.top;
+        return { left: Math.floor(al), top: Math.floor(at), width: Math.floor(aw), height: Math.floor(ah) };
+    }
+
+    function clearAvatar() {
+        var canvas = $('avatarcanvas');
+        var cw = canvas.width;
+        var ch = canvas.height;
+        var ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, cw, ch);
+    }
+
+    function refreshAvatarCanvas(uiposition) { 
+        var canvas = $('avatarcanvas');
+        var cw = canvas.width;
+        var ch = canvas.height;
+        var ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, cw, ch);
+        var ad = getAvatarDimension();
+        var iw = jQuery('#avatarimage').width();
+        var ih = jQuery('#avatarimage').height();
+        var img = $('avatarimage');
+        ctx.drawImage(img, 0,0, iw, ih, ad.left, ad.top, ad.width, ad.height);
+        var sd = getSelectorDimention();
+        // http://stackoverflow.com/questions/6258834/jquery-ui-draggable-event-timing
+        if (uiposition) {
+            sd.left = uiposition.left;
+            sd.top = uiposition.top;
+        }
+        ctx.fillStyle="rgba(0,0,0,0.6)";
+        ctx.fillRect(0, 0, cw, sd.top);
+        ctx.fillRect(sd.left+sd.width, sd.top, cw-sd.left-sd.width, ch-sd.top);
+        ctx.fillRect(0, sd.top+sd.height, sd.left+sd.width, ch-sd.top-sd.height);
+        ctx.fillRect(0, sd.top, sd.left, sd.height);
+    }
+
+    function getSelectorDimention() {
+        var sl = Math.ceil(jQuery('#selector').position().left);
+        var st = Math.ceil(jQuery('#selector').position().top);
+        var sw = jQuery('#selector').width();
+        var sh = jQuery('#selector').height();
+        return { left: sl, top: st, width: sw, height: sh };
+    }
+
+    function forceSelectorInsideAvatar() {
+        var sd = getSelectorDimention();
+        var ad = getAvatarDimension();
+        if (sd.width>ad.width) jQuery('#selector').width(ad.width);
+        if (sd.height>ad.height) jQuery('#selector').height(ad.height);
+        sd = getSelectorDimention();
+        if (sd.left<ad.left) jQuery('#selector').css('left', ad.left);
+        if (sd.top<ad.top) jQuery('#selector').css('top', ad.top);
+        if (sd.left+sd.width>ad.left+ad.width) jQuery('#selector').css('left', ad.left+ad.width-sd.width);
+        if (sd.top+sd.height>ad.top+ad.height) jQuery('#selector').css('top', ad.top+ad.height-sd.height);     
+        refreshAvatarCanvas();
+    }
+
+    function saveAvatar() {
+        var img = $('avatarimage');
+        var sd = getSelectorDimention();
+        var ad = getAvatarDimension();
+        var rl = (sd.left-ad.left)/ad.width;
+        var rt = (sd.top-ad.top)/ad.height;
+        var rw = sd.width/ad.width;
+        var rh = sd.height/ad.height;
+        var iw = jQuery('#avatarimage').width();
+        var ih = jQuery('#avatarimage').height();
+        var sl = rl*iw;
+        var st = rt*ih;
+        var sw = rw*iw;
+        var sh = rh*ih;
+        var tw = sw;
+        var th = sh;
+        if (sw>200 || sh>250) {
+            var r = Math.max(sw/200, sh/250);
+            tw = Math.floor(sw/r);
+            th = Math.floor(sh/r);
+        }          
+        var canvas = document.createElement('canvas');
+        canvas.width = tw;
+        canvas.height = th;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, sl, st, sw, sh, 0, 0, tw, th);
+        var dataURL = canvas.toDataURL("image/jpeg");
+        jQuery('#avatar1').val(dataURL.substr(dataURL.indexOf(",") + 1));
+
+        var tw = sw;
+        var th = sh;
+        if (sw>120 || sh>120) {
+            var r = Math.max(sw/120, sh/120);
+            tw = Math.floor(sw/r);
+            th = Math.floor(sh/r);
+        }     
+        var canvas = document.createElement('canvas');
+        canvas.width = tw;
+        canvas.height = th;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, sl, st, sw, sh, 0, 0, tw, th);
+        var dataURL = canvas.toDataURL("image/jpeg");
+        jQuery('#avatar2').val(dataURL.substr(dataURL.indexOf(",") + 1));
+
+        var mwh = Math.min(sw, sh);
+        if (sw>mwh) {
+            sl += Math.floor((sw-mwh)/2);
+            sw = mwh;
+        }
+        if (sh>mwh) {
+            st += Math.floor((sh-mwh)/2);
+            sh = mwh;
+        }
+        var tw = 48;
+        var th = 48;
+        var canvas = document.createElement('canvas');
+        canvas.width = tw;
+        canvas.height = th;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, sl, st, sw, sh, 0, 0, tw, th);
+        var dataURL = canvas.toDataURL("image/jpeg");
+        jQuery('#avatar3').val(dataURL.substr(dataURL.indexOf(",") + 1));
+
+        var src = $('avatarform').action;
+        $('avatarform').action = src.replace('&a=uploadavatar', '&a=rectavatar&base64=yes');
+        $('avatarform').target='rectframe'; 
+    }
+
+    function refreshAvatarCanvasForDisplay() {
+        var img = $('avatarimage');
+        var canvas = $('avatardisplaycanvas');
+        var ctx = canvas.getContext("2d");
+        var sd = getSelectorDimention();
+        var ad = getAvatarDimension();
+        var rl = (sd.left-ad.left)/ad.width;
+        var rt = (sd.top-ad.top)/ad.height;
+        var rw = sd.width/ad.width;
+        var rh = sd.height/ad.height;
+        var iw = jQuery('#avatarimage').width();
+        var ih = jQuery('#avatarimage').height();
+        var sl = rl*iw;
+        var st = rt*ih;
+        var sw = rw*iw;
+        var sh = rh*ih;
+        var tw = sw;
+        var th = sh;
+        if (sw>200 || sh>250) {
+            var r = Math.max(sw/200, sh/250);
+            tw = Math.floor(sw/r);
+            th = Math.floor(sh/r);
+        }  
+        var ctl = 10;
+        var ctt = 10;
+        ctx.drawImage(img, sl, st, sw, sh, ctl, ctt, tw, th);
+        ctl += 20 + tw;
+
+        var tw = sw;
+        var th = sh;
+        if (sw>120 || sh>120) {
+            var r = Math.max(sw/120, sh/120);
+            tw = Math.floor(sw/r);
+            th = Math.floor(sh/r);
+        }     
+        ctx.drawImage(img, sl, st, sw, sh, ctl, ctt, tw, th);
+        ctl += 20 + tw;
+
+        var tw = 48;
+        var th = 48;
+        var mwh = Math.min(sw, sh);
+        if (sw>mwh) {
+            sl += Math.floor((sw-mwh)/2);
+            sw = mwh;
+        }
+        if (sh>mwh) {
+            st += Math.floor((sh-mwh)/2);
+            sh = mwh;
+        }
+        ctx.drawImage(img, sl, st, sw, sh, ctl, ctt, tw, th);
+
+        ctx.fillStyle = "black";
+        ctx.font = "bold 16px Arial";
+        ctx.fillText('{lang upload_succeed}', dwidth - 160,155);
+        ctx.fillStyle = "grey";
+        ctx.font = "bold 12px Arial";
+        ctx.fillText('{lang three_avatars}', dwidth - 200, 180);        
+    }
+
+    function rectAvatarDone() {
+        var iframe = $('rectframe'); 
+        var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        if (!iframeDocument.body) return;
+        var res = iframeDocument.body.innerHTML;
+        if (!res) return;
+        if (res=='success') {
+            jQuery('#avatardisplayer').show();
+            refreshAvatarCanvasForDisplay();
+            jQuery('#avataradjuster').hide();
+            jQuery('#avatarfileselector').hide();            
+        }
+        else {
+            alert('{lang upload_error}');
+        }
+    }
+
+</script>
+
+<iframe name="uploadframe" id="uploadframe" style="display: none;" onload="uploadAvatarDone();"></iframe>
+<iframe name="rectframe" id="rectframe" style="display: none;" onload="rectAvatarDone();"></iframe>
+
+<!--{hook/spacecp_avatar_bottom}-->
+		</div>
+	</div>
+<script type="text/javascript">
+    var redirecturl = loadUserdata('avatar_redirect');
+    if(redirecturl) {
+        jQuery('retpre').innerHTML = '<a href="' + redirecturl + '">{lang previous_page}</a>';
+    }
+</script>
+<div class="appl">
+    <!--{subtemplate home/spacecp_footer}-->
+</div>
+</div>
+<!--{template common/footer}-->
