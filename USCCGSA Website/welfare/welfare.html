@@ -28,19 +28,12 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
     <script type="text/javascript">
         // document.domain = "caibaojian.com";
-    function setIframeHeight(iframe) {
-        if (iframe) {
-            var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-            if (iframeWin.document.body) {
-                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-                console.log(iframe.height);
-            }
-        }
-    };
+    
  
-window.onload = function () {
-    setIframeHeight(document.getElementById('external-frame'));
-};
+    // window.onload = function () {
+    //     setIframeHeight(document.getElementById('external-frame'));
+        
+    // };
 
     </script>
 
@@ -138,11 +131,11 @@ window.onload = function () {
                     <!--/.search-->
 
                     <div class="list-group">
-                        <a href="#" class="list-group-item ">新生攻略<span class="badge">18</span></a>
-                        <a href="#" class="list-group-item ">旅游攻略<span class="badge">11</span></a>
-                        <a href="#" class="list-group-item ">求职攻略<span class="badge">42</span></a>
-                        <a href="#" class="list-group-item ">医疗攻略<span class="badge">32</span></a>
-                        <a href="#" class="list-group-item ">租房信息<span class="badge">12</span></a>
+                        <a id="schoolButton" class="list-group-item ">新生攻略<span class="badge">18</span></a>
+                        <a id="travelButton" class="list-group-item ">旅游攻略<span class="badge">11</span></a>
+                        <a href="jobButton" class="list-group-item ">求职攻略<span class="badge">42</span></a>
+                        <a href="medButton" class="list-group-item ">医疗攻略<span class="badge">32</span></a>
+                        <a href="houseButton" class="list-group-item ">租房信息<span class="badge">12</span></a>
                     </div>
 
                     <!--/.archieve-->
@@ -214,8 +207,7 @@ window.onload = function () {
                         <div class="blog-content">
                             <a href="#" class="blog_cat">新生攻略</a>
                             
-                            <iframe id="external-frame" src="packup.html" width="100%" height="7000px" frameborder="0"  name="iframe名称">   
-</iframe>
+                            <iframe id="external-frame" src="packup.html" width="100%" height="7000px" frameborder="0"  name="iframe名称"></iframe>
                             
                             
                             <div class="inner-meta">
@@ -409,6 +401,54 @@ window.onload = function () {
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        /*********************
+        Adjust Height
+        *********************/
+        function setIframeHeight(iframe) {
+            if (iframe) {
+                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                if (iframeWin.document.body) {
+                    iframe.height = 80 + iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                }
+            }
+        };
+
+        /*********************
+        Bind buttons and ifame
+        *********************/
+        const schoolButton = document.getElementById("schoolButton")
+        const travelButton = document.getElementById("travelButton")
+        const jobButton = document.getElementById("jobButton")
+        const medButton = document.getElementById("medButton")
+        const houseButton = document.getElementById("houseButton")
+        const buttons = [schoolButton, travelButton, jobButton, medButton, houseButton]
+        const externalFrame = document.getElementById("external-frame")
+        externalFrame.onload = ()=> { setIframeHeight(externalFrame)}
+
+        /*********************
+        Click Event callback
+        *********************/
+        const changeTo = (e) => {
+            let buttonId = e.target.id;
+            let destin = "packup.html"
+            switch(buttonId) {
+                case "schoolButton":
+                    destin = "packup.html"
+                case "travelButton":
+                    destin = "lasvegas.html"
+            }
+            externalFrame.setAttribute("src", destin)
+        }
+
+        /*********************
+        Bind events to buttons
+        *********************/
+        buttons.forEach((button)=>{
+            button.addEventListener("click", changeTo)    
+        })
+    </script>
+
 </body>
 
 </html>
