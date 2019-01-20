@@ -34,7 +34,6 @@
     //     setIframeHeight(document.getElementById('external-frame'));
         
     // };
-
     </script>
 
 </head>
@@ -130,13 +129,121 @@
                     </div>
                     <!--/.search-->
 
-                    <div class="list-group">
+<!--                     <div class="list-group">
                         <a id="schoolButton" class="list-group-item ">新生攻略<span class="badge">18</span></a>
                         <a id="travelButton" class="list-group-item ">旅游攻略<span class="badge">11</span></a>
                         <a href="jobButton" class="list-group-item ">求职攻略<span class="badge">42</span></a>
                         <a href="medButton" class="list-group-item ">医疗攻略<span class="badge">32</span></a>
                         <a href="houseButton" class="list-group-item ">租房信息<span class="badge">12</span></a>
-                    </div>
+                    </div> -->
+
+
+                    <div class="panel-group" id="accordion">
+    <!-- Panel  1 -->
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="packup_part" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                新生攻略
+                <span class="badge">18</span>
+                </a>    
+            </h4>
+
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <a id="packup_part1" href="#" style="color: rgb(220,95,67);">新生攻略_行李准备篇</a>
+            </div>
+            <div class="panel-body">
+                <a id="packup_part2" href="#" style="color: rgb(220,95,67);">新生攻略_机票住房篇</a>
+            </div>
+        </div>
+        
+               
+    </div>   
+    <!-- Panel  2 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="travel_part" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseTwo">
+                旅游攻略 
+                <span class="badge">18</span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <a id="travel_part1" href="#" style="color: rgb(220,95,67);">说走就走的拉斯维加斯</a>
+                
+            </div>
+            <div id="travel_part2" class="panel-body">
+                <a id="travel_part2" href="#" style="color: rgb(220,95,67);">带着父母去旅行-美西小环线篇</a>
+                
+            </div>
+            <div id="travel_part3" class="panel-body">
+                <a id="travel_part3" href="#" style="color: rgb(220,95,67);">圣诞新年假期去哪浪</a>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Panel  3 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="career_part" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseThree">
+                求职攻略
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                <a id="career_part1" href="#" style="color: rgb(220,95,67);">你的简历过关了吗</a>
+            </div>
+            <div class="panel-body">
+                <a id="career_part2" href="#" style="color: rgb(220,95,67);">OPT，CPT申请攻略</a>
+            </div>
+        </div>
+    </div>
+        <!-- Panel  4 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="medical_part" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseFour">
+                医疗保险
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+                <a id="medical_part1" href="#" style="color: rgb(220,95,67);">教你15分钟节省$600</a>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Panel  5 -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a id="house_part" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseFive">
+                租房信息
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+            <div class="panel-body">
+                <a id="house_part1" href="#" style="color: rgb(220,95,67);">南加大好房gateway震撼来袭</a>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
 
                     <!--/.archieve-->
 
@@ -413,34 +520,110 @@
                 }
             }
         };
-
         /*********************
         Bind buttons and ifame
         *********************/
-        const schoolButton = document.getElementById("schoolButton")
-        const travelButton = document.getElementById("travelButton")
-        const jobButton = document.getElementById("jobButton")
-        const medButton = document.getElementById("medButton")
-        const houseButton = document.getElementById("houseButton")
-        const buttons = [schoolButton, travelButton, jobButton, medButton, houseButton]
+        // const schoolButton = document.getElementById("schoolButton")
+        // const travelButton = document.getElementById("travelButton")
+        // const jobButton = document.getElementById("jobButton")
+        // const medButton = document.getElementById("medButton")
+        // const houseButton = document.getElementById("houseButton")
+
+
+        const packup_part = document.getElementById("packup_part")
+        const packup_part1 = document.getElementById("packup_part1")
+        const packup_part2 = document.getElementById("packup_part2")
+
+        const travel_part = document.getElementById("travel_part")
+        const travel_part1 = document.getElementById("travel_part1")
+        const travel_part2 = document.getElementById("travel_part2")
+        const travel_part3 = document.getElementById("travel_part3")
+
+        const career_part = document.getElementById("career_part")
+        const career_part1 = document.getElementById("career_part1")
+        const career_part2 = document.getElementById("career_part2")
+
+        const medical_part = document.getElementById("medical_part")
+        const medical_part1 = document.getElementById("medical_part1")
+
+        const house_part = document.getElementById("house_part")
+        const house_part1 = document.getElementById("house_part1")
+
+
+
+
+
+
+
+        // const buttons = [schoolButton, travelButton, jobButton, medButton, houseButton]
+
+        const buttons = [packup_part, packup_part1, packup_part2, 
+        travel_part, travel_part1, travel_part2, travel_part3, 
+        career_part, career_part1, career_part2,
+        medical_part, medical_part1,
+        house_part, house_part1]
+
+
         const externalFrame = document.getElementById("external-frame")
         externalFrame.onload = ()=> { setIframeHeight(externalFrame)}
-
         /*********************
         Click Event callback
         *********************/
         const changeTo = (e) => {
             let buttonId = e.target.id;
-            let destin = "packup.html"
+            console.log("entered")
+            let destin = "packup-xingli.html"
             switch(buttonId) {
-                case "schoolButton":
-                    destin = "packup.html"
-                case "travelButton":
-                    destin = "lasvegas.html"
+                case "packup_part":
+                    destin = "packup-xingli.html"
+                    break
+                case "packup_part1":
+                    destin = "packup-xingli.html"
+                    break
+                case "packup_part2":
+                    destin = "packup-jipiao.html"
+                    break
+                case "travel_part":
+                    destin = "travel-lasvegas.html"
+                    break
+                case "travel_part1":
+                    destin = "travel-lasvegas.html"
+                    break
+                case "travel_part2":
+                    destin = "travel-meixi.html"
+                    break
+                case "travel_part3":
+                    destin = "travel-shengdan.html"
+                    break
+                case "career_part":
+                    destin = "career-jianli.html"
+                    break
+                case "career_part1":
+                    destin = "career-jianli.html"
+                    break
+                case "career_part2":
+                    destin = "career-opt.html"
+                    break
+                case "medical_part":
+                    destin = "medical.html"
+                    break
+                case "medical_part1":
+                    destin = "medical.html"
+                    break
+                case "house_part":
+                    destin = "house.html"
+                    break
+                case "house_part1":
+                    destin = "house.html"
+                    break
+
+
+
+
+
             }
             externalFrame.setAttribute("src", destin)
         }
-
         /*********************
         Bind events to buttons
         *********************/
