@@ -1651,11 +1651,9 @@ aside .widget {
     background-color: #EC5538;
     border-radius: 5px;
     color: #fff;
-    padding: 8px;
     position: relative;
-    left: 60px;
-    top: -18px;
     font-weight: normal;
+    float: right;
 }
 
 .blog_archieve {
@@ -2351,8 +2349,10 @@ CATEGORIES**********
 .list-group-item {
     border:none !important;
 }
-.list-group-item>.badge{
+.badge{
     padding:3px 7px !important;
-    left:0px !important;
+    right:0px !important;
     top:0px !important;
+    float: right !important;
+    /*text-align: center;*/
 }
