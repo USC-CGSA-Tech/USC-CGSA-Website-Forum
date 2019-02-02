@@ -756,7 +756,8 @@ if (typeof getComputedStyle == 'undefined') {
                 if(parseFloat(widthNum, 10) > 40 && height > 40 && breakParentWidth) {
                     item.className += ' img_loading';
                 }
-                item.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+                // item.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+                item.setAttribute("src", item.getAttribute("data-src"));
             }
             item.style.cssText += ";width: " + widthNum + widthUnit + " !important;";
             item.style.cssText += ";height: " + height + widthUnit + " !important;";

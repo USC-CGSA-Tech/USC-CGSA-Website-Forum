@@ -131,6 +131,7 @@ this[e](t,r);
 
     window.isInWeixinApp = function() {
         return /MicroMessenger/.test(navigator.userAgent);
+
     };
 
     window.getQueryFromURL = function(url) {
@@ -751,7 +752,8 @@ if (typeof getComputedStyle == 'undefined') {
                 if(parseFloat(widthNum, 10) > 40 && height > 40 && breakParentWidth) {
                     item.className += ' img_loading';
                 }
-                item.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+                // item.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
+                item.setAttribute("src", item.getAttribute("data-src"))
             }
             item.style.cssText += ";width: " + widthNum + widthUnit + " !important;";
             item.style.cssText += ";height: " + height + widthUnit + " !important;";
@@ -881,8 +883,8 @@ if (typeof getComputedStyle == 'undefined') {
 
             mydiv.className = "img_loading";
 
-            mydiv.src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==";
-            
+            mydiv.src="https://mmbiz.qpic.cn/mmbiz_jpg/ysTntjOFhKgGzSCtYXkkia44Ukxf0mvAGicRmOK6jTuTWO4EFeTjVmldyr1tIibROHRiaftc6ZFbMOUzgl8jTFaCUQ/640?wx_fmt=jpeg";
+            console.log("mydiv");
             
             videoPlaceHolderSpan.style.cssText = "width: " + obj.w + "px !important;";
             mydiv.style.cssText += ";width: " + obj.w + "px";
@@ -1661,7 +1663,9 @@ Math.random()<1;
 e(),!!window.__moon_initcallback&&window.__moon_initcallback(),window.__wxgspeeds&&(window.__wxgspeeds.moonendtime=+new Date);
 }
 }
-__moonf__(); }, 25);</script><script nonce="1121056254" type="text/javascript">
+__moonf__(); }, 25);</script>
+<script nonce="1121056254" type="text/javascript">
+
     var real_show_page_time = +new Date();
     if (!!window.addEventListener){
         window.addEventListener("load", function(){
@@ -1681,6 +1685,7 @@ __moonf__(); }, 25);</script><script nonce="1121056254" type="text/javascript">
             console.info('not support seajs config');
         }
     }
+
 
     
 </script>

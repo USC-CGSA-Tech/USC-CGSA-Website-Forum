@@ -50,6 +50,7 @@ a {
     color: #EC5538;
     -webkit-transition: color 300ms, background-color 300ms;
     transition: color 300ms, background-color 300ms;
+    cursor: pointer !important;
 }
 
 a:hover,
