@@ -596,6 +596,8 @@ input.search-form:hover {
 
 .recent-work-wrap img {
   width: 100%;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .recent-work-wrap .recent-work-inner {
@@ -1067,53 +1069,44 @@ a.accordion-toggle i {
 }
 
 /*testimonial slider*/
-
+/*committee info*/
 #testimonial {
   background-color: #fafafa;
 }
-.testimonial-slider.owl-carousel .owl-item img {
-  width: auto;
+
+.committee-grid{
   display: inline-block;
+  margin-bottom: 30px;
 }
 
-.testimonial-slider {
-  text-align: center;
-}
-
-.testimonial-slider .single-slide {
+.single-cell {
   background-color: #fff;
-  padding: 45px 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
   color: #707070;
-  font-size: 16px;
-  line-height: 26px;
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
+  height: 580px;
+}
+.cell-right{
+  margin-right: 0px;
 }
 
-.testimonial-slider .single-slide .slide-img {
-  border-radius: 50%;
-  overflow: hidden;
-  display: inline-block;
+.committee-img{
+  margin: auto;
   margin-bottom: 15px;
+  height: 350px;
+  width: 260px;
 }
-.testimonial-slider .content h4 {
-  margin: 20px 0 0;
-}
-.testimonial-slider .content img {
-  margin-bottom: 20px;
-}
-.testimonial-slider .owl-dots {
-  margin: 50px 0 0;
-}
-.testimonial-slider .owl-dot {
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  display: inline-block;
-  margin: 0 5px;
-  border-radius: 50%;
-  border: 1px solid #ec5538;
-}
-.testimonial-slider .owl-dot.active {
-  background-color: #ec5538;
+
+.committee-content{
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 1.3px;
+  width : 330px;
 }
 
 /*************************
