@@ -1,17 +1,36 @@
 p{
 	font-family: 'Paytone One', sans-serif;
-	font-size:  60px;
+	/*font-size:  60px;*/
 	text-align: center;
 
 }
-#title{
-	text-align: center;
+.preparing{
+	font-size:  50px;
+	padding: 10px;
+	margin:  30px;
+	/*padding-bottom: 20px;*/
 }
 
-img{
-	margin: 40px;
+.instruction{
+	margin: 30px;
+	font-size: 20px;
+	text-align: left;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%
-
+	/*text-indent: 2px;*/
+}
+.title{
+	text-align: center;
+	margin: 10px;
+}
+.title img{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width:900px;
+	
+}
+.button{
+	text-align: center;
 }
