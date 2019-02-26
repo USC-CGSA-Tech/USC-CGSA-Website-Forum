@@ -596,6 +596,8 @@ input.search-form:hover {
 
 .recent-work-wrap img {
   width: 100%;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .recent-work-wrap .recent-work-inner {
