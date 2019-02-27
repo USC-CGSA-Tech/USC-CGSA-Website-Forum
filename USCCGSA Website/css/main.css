@@ -595,11 +595,14 @@ input.search-form:hover {
 }
 
 .recent-work-wrap img {
-  width: 100%;
   border-radius: 20px;
   padding: 10px;
 }
 
+.activities img {
+  width:100%;
+  height:300px;
+}
 .recent-work-wrap .recent-work-inner {
   top: 0;
   background: transparent;
