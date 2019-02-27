@@ -10,6 +10,22 @@ p{
 	margin:  30px;
 	/*padding-bottom: 20px;*/
 }
+.socialQRcode{
+	width: 60px;
+	float: right;
+	/*display: none;*/
+	/*visibility: hidden;*/
+}
+.socialQRcode:hover img{
+	/*display: block;*/
+	/*visibility: visible;*/
+	border: 1px red solid;
+	opacity: 0.5;
+}
+
+.hide {
+	display: block;
+}
 
 .instruction{
 	margin: 30px;
