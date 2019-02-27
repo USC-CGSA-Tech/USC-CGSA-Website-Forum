@@ -33,14 +33,10 @@
                         <div class="social">
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-wechat"></i></a></li>
                             </ul>
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,8 +74,13 @@
         <!--/nav-->
 
     </header>
+    <div id="festival_jump"></div>
+    <div id="hackathon_jump"></div>
+    <div id="wink_jump"></div>
+    <div id="hiJob_jump"></div>
+    <div id="pubg_jump"></div>
+    <div id="csQA_jump"></div>
     <!--/header-->
-    
     <div class="page-title" style="background-image: url(../images/slider/bg1.jpg)">
         <h1>最新活动</h1>
     </div>
@@ -107,6 +108,7 @@
                                 </h4>
 
                             </div>
+                            
                             <div id="collapseOne" class="panel-collapse collapse in" >
                                 <div class="panel-body" onclick="document.getElementById('external-frame').setAttribute('src', 'festival.html')">
                                     <a id="festival" style="color: rgb(220,95,67); cursor: pointer;" >南加留学生狂欢嘉年华</a>
@@ -140,15 +142,6 @@
                         <div class="blog-content">
                             
                             <iframe id="external-frame" src="festival.html" width="100%" height=900px frameborder="0" scrolling="no"></iframe>
-                            
-                            
-                            <div class="inner-meta">
-                                <div class="social-btns">
-                                    <a href="#"> <i class="fa fa-heart"></i> Like</a>
-                                    <a href="#" class="tweet-bg"> <i class="fa fa-twitter"></i> tweet</a>
-                                    <a href="#" class="facebook-bg"> <i class="fa fa-facebook"></i> facebook</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <!--/.blog-item-->
@@ -243,6 +236,26 @@
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/jquery.isotope.min.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+         if(window.location.hash === "#festival_jump"){
+            document.getElementById('external-frame').setAttribute('src', 'festival.html');
+         }
+         if(window.location.hash === "#hackathon_jump"){
+            document.getElementById('external-frame').setAttribute('src', 'hackathon.html');
+         }
+         if(window.location.hash === "#wink_jump"){
+            document.getElementById('external-frame').setAttribute('src', 'wink_model.html');
+         }
+         if(window.location.hash === "#hiJob_jump"){
+            document.getElementById('external-frame').setAttribute('src', 'hiJob.html');
+         }
+         if(window.location.hash === "#pubg_jump"){
+            document.getElementById('external-frame').setAttribute('src', 'PUBG.html');
+         }
+         if(window.location.hash === "#csQA_jump"){
+            document.getElementById('external-frame').setAttribute('src', 't_CS_QA.html');
+         }
+    </script>
 </body>
 
 </html>
