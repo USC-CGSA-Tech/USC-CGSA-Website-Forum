@@ -25,7 +25,11 @@
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-brand{
+<<<<<<< HEAD
     font-size: 27px !important;
+=======
+    font-size: 28px !important;
+>>>>>>> b096bbfac294dc2c840aa23eef22987791ceb6a7
   }
   .navbar-brand >img{
     width: 50px;
@@ -116,7 +120,11 @@
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-brand{
+<<<<<<< HEAD
     font-size: 22px !important;
+=======
+    font-size: 23px !important;
+>>>>>>> b096bbfac294dc2c840aa23eef22987791ceb6a7
   }
   .navbar-brand >img{
     width: 40px;
