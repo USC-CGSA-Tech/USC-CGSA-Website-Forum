@@ -273,6 +273,8 @@ input.search-form:hover {
   margin: 0;
 }
 
+
+
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -313,7 +315,7 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-brand {
-  font-size: 36px;
+  font-size: 35px;
   line-height: 50px;
   color: #fff;
 }

@@ -25,7 +25,7 @@
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-brand{
-    font-size: 28px !important;
+    font-size: 27px !important;
   }
   .navbar-brand >img{
     width: 50px;
@@ -116,7 +116,7 @@
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-brand{
-    font-size: 23px !important;
+    font-size: 22px !important;
   }
   .navbar-brand >img{
     width: 40px;
@@ -220,6 +220,9 @@
 
 /* xs */
 @media (max-width: 767px) {
+    .social{
+      float: right;
+    }
     .navbar-brand{
       font-size: 25px !important;
     }
