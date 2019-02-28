@@ -1,12 +1,11 @@
 jQuery(function ($) {
     'use strict';
 
-    //#main-slider
-    $(function () {
-        $('#main-slider.carousel').carousel({
-            interval: 8000
-        });
-    });
+    // main-slider
+
+    // $('#main-slider.carousel').carousel({
+    //     interval: 3000
+    //   });
 
     $('.window-height').height($(window).height());
 

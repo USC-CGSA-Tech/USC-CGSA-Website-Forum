@@ -87,7 +87,7 @@
     <section id="main-slider" class="no-margin">
         <div class="carousel slide">
             <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="0" data-ride="carousel" class="active"></li>
                 <li data-target="#main-slider" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner">
@@ -310,9 +310,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!--/.row-->
+            <div class="clearfix text-center">
+                <a href="about_us/about_us.html" class="btn btn-primary">了解更多</a>
+            </div>
         </div>
         <!--/.container-->
     </section>
@@ -505,6 +507,15 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.carousel-content').carousel({
+            interval: 1000,
+            // pause:null
+        });
+    $('.carousel').carousel('cycle');
+    });  
+    </script>
 </body>
 
 </html>
