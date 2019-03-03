@@ -478,7 +478,7 @@
         *********************/
         
         function setIframeHeight(iframe) {
-            // iframe.removeAttribute("height");
+            iframe.removeAttribute("height");
             if (iframe) {
                 var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
                 if (iframeWin.document.body) {
