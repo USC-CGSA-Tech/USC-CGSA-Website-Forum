@@ -16,8 +16,27 @@
 
 }
 
+/* @media (max-width: 1024px) {
+  .navbar-brand{
+    font-size: 25px !important;
+  }
+} */
+
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand{
+<<<<<<< HEAD
+    font-size: 27px !important;
+=======
+    font-size: 28px !important;
+>>>>>>> b096bbfac294dc2c840aa23eef22987791ceb6a7
+  }
+  .navbar-brand >img{
+    width: 50px;
+  }
+  .navbar {
+    padding: 18px 0 !important;
+  }
   
  /* Make Navigation Toggle on Desktop Hover */
   .dropdown:hover .dropdown-menu {
@@ -28,9 +47,9 @@
 
   .navbar-nav > li {
     margin-left: 10px;
-  }
+  } 
 
-  .navbar-collapse {
+  navbar-collapse {
     padding-left: 0;
     padding-right: 0;
   }
@@ -100,6 +119,24 @@
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand{
+<<<<<<< HEAD
+    font-size: 22px !important;
+=======
+    font-size: 23px !important;
+>>>>>>> b096bbfac294dc2c840aa23eef22987791ceb6a7
+  }
+  .navbar-brand >img{
+    width: 40px;
+  }
+  .navbar {
+    padding: 15px 0 !important;
+  }
+  .navbar-inverse .navbar-nav > li > a{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
     #content .tab-pane{
         padding-left: 0;
         padding-top: 40px;
@@ -191,6 +228,21 @@
 
 /* xs */
 @media (max-width: 767px) {
+    .social{
+      float: right;
+    }
+    .navbar-brand{
+      font-size: 25px !important;
+    }
+    .container{
+      line-height: 22px;
+    }
+    .navbar {
+      padding: 10px 0 !important;
+    }
+    .navbar-brand >img{
+      width: 45px;
+    }
     .navbar-nav>li{
         display: block;
         margin: 0;
@@ -239,9 +291,7 @@
         width: 50%;
         margin-bottom: 35px;
     }
-    .navbar-inverse .navbar-brand{
-        margin-bottom: 10px;
-    }
+
     .social,
     .top-number{
         text-align: center;
@@ -261,6 +311,7 @@
 
   .container > .navbar-header, .container > .navbar-collapse{
     margin-left: 0;
+
   }
     .about-img{
         padding-right: 0;
@@ -383,8 +434,21 @@
 }
 
 /* XS Portrait */
-@media (max-width: 480px) {
 
-
+@media (max-width: 426px) {
+  .navbar-brand{
+    font-size: 23px !important;
+  }
+  .navbar-brand >img{
+    width: 36px;
+  }
 }
 
+@media (max-width: 320px) {
+  .navbar-brand{
+    font-size: 20px !important;
+  }
+  .navbar-brand >img{
+    width: 30px;
+  }
+}
