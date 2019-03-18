@@ -29,12 +29,7 @@ p {
 }
 
 img {
-    position:relative;
-    top:80px;
-    left:5%;
-    width:90%;
-    height: 400px;
-    
+    width:100%;    
 }
 
 a:link, a:visited, a:hover, a:active {
