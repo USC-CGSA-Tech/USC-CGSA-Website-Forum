@@ -30,19 +30,20 @@ p {
 
 img {
     position:relative;
+    display: block;
     top:80px;
-    left:5%;
+    left:40px;
     width:90%;
-    height: 500px;
+    height: auto;
     border-radius: 10px;
     
 }
 
 a:link, a:visited, a:hover, a:active {
     float:left;
-    display: inline-block;
+    display: block;
     position: relative;
-    left:50%;
+    left:calc(40px + 45%);
     transform: translate(-50%, -50%);
     font-size: 22px;
     margin:0;
