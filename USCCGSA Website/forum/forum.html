@@ -18,9 +18,11 @@
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="shortcut icon" href="../images/cgsa.ico">
     <link rel="stylesheet" type="text/css" href="forum.css">
     <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,15 +32,43 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
+                        <div class="top-number">
+                        </div>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <div class="social">
                             <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <!-- <li><a class="socialQRcode" href="#" ><i class="fa fa-wechat"></i></a></li> -->
-                                <li><a href="#"><i class="fa fa-wechat"></i></a></li>
+                                <li><a href="https://www.facebook.com/groups/USC.CGSA/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/usc-chinese-graduate-student-association/?viewAsMember=true"  target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" data-toggle="modal" data-target="#insModal"></i></a></li>
+                                <div class="modal fade" id="insModal" tabindex="-1" role="dialog" aria-labelledby="wechateModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <img src="../images/insQR.png"  width="60%" class="center-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <li><a href="#"><i class="fab fa-wechat" data-toggle="modal" data-target="#wechatModal"></i></a></li>
+                                <!-- Modal -->
+                                <div class="modal fade" id="wechatModal" tabindex="-1" role="dialog" aria-labelledby="wechateModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <img src="../images/new_QR.png"  width="60%" class="center-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -57,13 +87,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="../images/CSGA_LOGO.png" width="55px" alt="CGSA_LOGO"></a>
-                    
-                    
+                    <a class="navbar-brand" href="../index.html"><img src="../images/CGSA_web.png" height="35%" alt="CGSA_LOGO"></a>
                 </div>
-                <!-- <div class="socialQRcode">
-                    <img id="wechatqrcode" src="../images/qr.png" alt="QR code">
-                </div> -->
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
@@ -132,7 +157,7 @@
     </section>
 
 
-    <section id="bottom">
+        <section id="bottom">
         <div class="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
                 <div class="col-md-2">
@@ -146,8 +171,8 @@
                             <div class="widget">
                                 <h3>关于我们</h3>
                                 <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="../about_us/about_us.html">About us</a></li>
+                                    <li><a href="../about_us/contact_us.html">Contact us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -155,10 +180,23 @@
 
                         <div class="col-md-3 col-sm-6">
                             <div class="widget">
-                                <h3>预留位</h3>
+                                <h3>常用链接</h3>
                                 <ul>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="https://www.usc.edu/" target="_blank">USC官网</a></li>
+                                    <li><a href="https://ois.usc.edu/" target="_blank">USC OIS官网</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/.col-md-3-->
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h3>开发人员(姓氏排名)</h3>
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/in/youwangdeng/">邓友旺</a></li>
+                                    <li><a href="https://github.com/Attriumph" target="_blank">韩灵全 Github</a></li>            
+                                    <li><a href="#">金炜众</a></li>
+                                    <li><a href="#">刘泽玮</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -168,18 +206,11 @@
                             <div class="widget">
                                 <h3>开发人员</h3>
                                 <ul>
-                                    <li><a href="#">Web Development</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <!--/.col-md-3-->
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="widget">
-                                <h3>预留</h3>
-                                <ul>
-                                    <li><a href="#"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/haipengyu/">于海鹏</a></li>
+                                    <li><a href="https://www.linkedin.com/in/yuntao-liang-b500a4168/">梁蕴韬</a></li>
+                                    <li><a href="https://www.linkedin.com/in/tong-miao-b1a435169/">缪童</a></li>
+                                    <li><a href="#">秦镜如</a></li>
+                                    <li><a href="https://github.com/QiaohuiWang">王乔慧</a></li>
                                 </ul>
                             </div>
                         </div>
