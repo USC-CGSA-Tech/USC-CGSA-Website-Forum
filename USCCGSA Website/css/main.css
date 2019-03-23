@@ -10,10 +10,11 @@
   300,
   800
 );
-
 /*************************
 *******Typography******
 **************************/
+/*
+orginal color background: #ec5538;*/
 
 body {
   background: #fff;
@@ -59,14 +60,14 @@ h4 {
 }
 
 a {
-  color: #ec5538;
+  color: #d71d04;
   -webkit-transition: color 300ms, background-color 300ms;
   transition: color 300ms, background-color 300ms;
 }
 
 a:hover,
 a:focus {
-  color: #ec5538;
+  color: #d71d04;
 }
 
 hr {
@@ -76,7 +77,8 @@ hr {
 
 .btn-primary {
   padding: 8px 20px;
-  background: #ec5538;
+  /*background: #ec5538;*/
+  background: #d71d04;
   color: #fff;
   border-radius: 4px;
   border: none;
@@ -85,7 +87,7 @@ hr {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: #ec5538;
+  background: #d71d04;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -239,7 +241,7 @@ ul.social-share li a {
 }
 
 ul.social-share li a:hover {
-  background: #ec5538;
+  background: #d71d04;
   color: #fff;
 }
 
@@ -307,7 +309,7 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: #ec5538;
+  background-color: #d71d04;
   color: #fff;
 }
 
@@ -327,7 +329,8 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #ec5538;
+  /*background-color: #ec5538;*/
+  background-color: #d71d04;
   color: #fff;
 }
 
@@ -356,7 +359,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-  background-color: #ec5538;
+  background-color: #d71d04;
   color: #fff;
 }
 
@@ -408,14 +411,14 @@ input.search-form:hover {
 #main-slider .carousel .btn-slide {
   padding: 0 30px;
   line-height: 42px;
-  background: #ec5538;
+  background: #d71d04;
   color: #fff;
   border-radius: 4px;
   margin-top: 40px;
   display: inline-block;
   font-size: 14px;
   margin-right: 10px;
-  border: 1px solid #ec5538;
+  border: 1px solid #d71d04;
 }
 
 #main-slider .carousel .btn-slide.white {
@@ -470,7 +473,7 @@ input.search-form:hover {
 #main-slider .next {
   position: absolute;
   top: 50%;
-  background-color: #ec5538;
+  background-color: #d71d04;
   color: #fff;
   display: inline-block;
   margin-top: -25px;
@@ -513,8 +516,8 @@ input.search-form:hover {
 }
 
 #main-slider .carousel-indicators li.active {
-  background-color: #ec5538;
-  border: 1px solid #ec5538;
+  background-color: #d71d04;
+  border: 1px solid #d71d04;
 }
 
 #main-slider .active .animation.animated-item-1 {
@@ -561,8 +564,8 @@ input.search-form:hover {
 
 .features .feature-wrap:hover .icon {
   color: #ffffff;
-  border: 1px solid #ec5538;
-  background-color: #ec5538;
+  border: 1px solid #d71d04;
+  background-color: #d71d04;
 }
 
 .features .feature-wrap h2 {
@@ -645,7 +648,7 @@ input.search-form:hover {
   color: #fff;
   height: 50px;
   width: 50px;
-  background-color: #ec5538;
+  background-color: #d71d04;
   border-radius: 50%;
   display: inline-block;
   line-height: 50px;
@@ -898,12 +901,12 @@ a.accordion-toggle i {
 }
 
 .panel-heading.active a.accordion-toggle i {
-  background: #ec5538;
+  background: #d71d04;
   color: #fff;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i {
-  background: #ec5538;
+  background: #d71d04;
   color: #fff;
 }
 
@@ -915,7 +918,7 @@ a.accordion-toggle i {
 #content .nav-tabs > li.active > a,
 #content .nav-tabs > li.active > a:hover,
 #content .nav-tabs > li.active > a:focus {
-  color: #ec5538;
+  color: #d71d04;
   background-color: #f9fafb;
   border: 1px solid #e9eff4;
   font-weight: 500;
@@ -936,7 +939,7 @@ a.accordion-toggle i {
   position: absolute;
   width: 80px;
   height: 80px;
-  background-color: #ec5538;
+  background-color: #d71d04;
   top: 50%;
   left: 50%;
   color: #fff;
@@ -1208,7 +1211,7 @@ a.accordion-toggle i {
 }
 
 .single-team .team-social a:hover {
-  color: #ec5538;
+  color: #d71d04;
 }
 
 /***********************
@@ -1247,7 +1250,7 @@ a.accordion-toggle i {
 }
 
 .request h4 a {
-  background: #ec5538;
+  background: #d71d04;
   color: #fff;
   font-size: 14px;
   font-weight: normal;
@@ -1256,7 +1259,7 @@ a.accordion-toggle i {
 }
 
 .request h4:after {
-  border-color: #ec5538 transparent transparent;
+  border-color: #d71d04 transparent transparent;
   border-style: solid;
   border-width: 12px;
   bottom: -18px;
@@ -1268,7 +1271,7 @@ a.accordion-toggle i {
 }
 
 .request h4:before {
-  border-color: #ec5538 transparent transparent;
+  border-color: #d71d04 transparent transparent;
   border-style: solid;
   border-width: 12px;
   bottom: -18px;
@@ -1320,7 +1323,7 @@ a.accordion-toggle i {
 
 .footer {
   background: none repeat scroll 0 0 #2e2e2e;
-  border-top: 5px solid #ec5538;
+  border-top: 5px solid #d71d04;
   height: 84px;
   margin-top: 110px;
 }
@@ -1373,8 +1376,8 @@ a.accordion-toggle i {
 .portfolio-filter > li a:hover,
 .portfolio-filter > li a.active {
   color: #fff;
-  background: #ec5538;
-  border: 1px solid #ec5538;
+  background: #d71d04;
+  border: 1px solid #d71d04;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -1516,7 +1519,7 @@ section.pricing {
 }
 
 .single-pricing.featured a {
-  background-color: #ec5538;
+  background-color: #d71d04;
   color: #fff;
 }
 
@@ -1645,12 +1648,12 @@ aside .widget {
 }
 
 .blog_category li a:hover {
-  background: #ec5538;
+  background: #d71d04;
   color: #fff;
 }
 
 .badge:before {
-  border-color: transparent transparent transparent #ec5538;
+  border-color: transparent transparent transparent #d71d04;
   border-style: solid;
   border-width: 10px;
   bottom: -8px;
@@ -1662,7 +1665,7 @@ aside .widget {
 }
 
 .badge {
-  background-color: #ec5538;
+  background-color: #d71d04;
   border-radius: 5px;
   color: #fff;
   padding: 8px;
@@ -1842,7 +1845,7 @@ ul.faq li > div h3 {
 }
 
 .publish_date {
-  background: #ec5538;
+  background: #d71d04;
   border-bottom: 5px solid #4e4e4e;
   color: #fff;
   padding: 5px 0;
@@ -1885,7 +1888,7 @@ ul.pagination > li > a i {
 
 ul.pagination > li.active > a,
 ul.pagination > li:hover > a {
-  background-color: #ec5538;
+  background-color: #d71d04;
   color: #fff;
 }
 
@@ -1900,7 +1903,7 @@ ul.pagination > li:last-child > a {
 ul.pagination > li:first-child > a:hover,
 ul.pagination > li:last-child > a:hover {
   background-color: transparent;
-  color: #ec5538;
+  color: #d71d04;
 }
 
 ul.pagination > li:first-child > a {
@@ -1934,7 +1937,7 @@ ul.pagination > li:last-child > a {
   background-color: transparent;
 }
 .widget.search form button i {
-  color: #ec5538;
+  color: #d71d04;
 }
 
 .search_box {
@@ -1975,7 +1978,7 @@ ul.sidebar-gallery {
 }
 
 .tag-cloud li a:hover {
-  background: #ec5538;
+  background: #d71d04;
   color: #fff;
 }
 
@@ -2029,7 +2032,7 @@ ul.sidebar-gallery {
 }
 
 .widget.social_icon a:hover {
-  background-color: #ec5538;
+  background-color: #d71d04;
   color: #fff;
 }
 
@@ -2047,7 +2050,7 @@ ul.sidebar-gallery {
   color: #989898;
 }
 .post-meta p i {
-  color: #ec5538;
+  color: #d71d04;
 }
 .post-meta p a {
   color: #989898;
@@ -2055,7 +2058,7 @@ ul.sidebar-gallery {
   transition: 0.4s;
 }
 .post-meta p a:hover {
-  color: #ec5538;
+  color: #d71d04;
 }
 .post-meta p a.fa {
   padding: 0 6px;
@@ -2086,7 +2089,7 @@ ul.sidebar-gallery {
 }
 
 .inner-meta .social-btns a {
-  background-color: #ec5538;
+  background-color: #d71d04;
   color: #fff;
   display: inline-block;
   line-height: 30px;
@@ -2168,7 +2171,7 @@ ul.sidebar-gallery {
 }
 
 .comment-count a:last-child i {
-  color: #ec5538;
+  color: #d71d04;
 }
 
 .comments .single-comment .comment-content h5 {
@@ -2200,7 +2203,7 @@ ul.sidebar-gallery {
   border: none;
   line-height: 42px;
   padding: 0 35px;
-  background-color: #ec5538;
+  background-color: #d71d04;
   border-radius: 3px;
   margin-left: auto;
   margin-top: 15px;
@@ -2280,7 +2283,7 @@ shortcodes page css
 }
 #bottom {
   background: #f5f5f5;
-  border-bottom: 5px solid #ec5538;
+  border-bottom: 5px solid #d71d04;
   font-size: 14px;
 }
 
@@ -2310,7 +2313,7 @@ shortcodes page css
 }
 
 #bottom ul li a:hover {
-  color: #ec5538;
+  color: #d71d04;
 }
 
 #bottom .widget {
@@ -2331,7 +2334,7 @@ shortcodes page css
 }
 
 #footer a:hover {
-  color: #ec5538;
+  color: #d71d04;
 }
 
 #footer ul {
