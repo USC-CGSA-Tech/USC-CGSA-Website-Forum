@@ -187,13 +187,13 @@
         </div>
         <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body">
-                <a id="linkedin_part1" style="color: rgb(220,95,67);">linkedin使用1</a>
+                <a id="linkedin_part1" style="color: rgb(220,95,67);">linkedin使用</a>
                 
             </div>
-            <div id="travel_part2" class="panel-body">
+            <!-- <div id="travel_part2" class="panel-body">
                 <a id="linkedin_part2" style="color: rgb(220,95,67);">linkedin使用2</a>
                 
-            </div>
+            </div> -->
             
         </div>
     </div>
@@ -211,9 +211,9 @@
             <div class="panel-body">
                 <a id="resume_part1" style="color: rgb(220,95,67);">你的简历过关了吗</a>
             </div>
-            <div class="panel-body">
+            <!-- <div class="panel-body">
                 <a id="resume_part2" style="color: rgb(220,95,67);">你的简历过关了吗2</a>
-            </div>
+            </div> -->
         </div>
     </div>
         <!-- Panel  4 -->
@@ -231,10 +231,10 @@
                 <a id="fair_part1" style="color: rgb(220,95,67);">Career Fair: Dressing Code快速攻略</a>
                 
             </div>
-            <div class="panel-body">
+            <!-- <div class="panel-body">
                 <a id="fair_part2" style="color: rgb(220,95,67);">Career Fair: Dressing Code快速攻略2</a>
                 
-            </div>
+            </div> -->
             
         </div>
     </div>
@@ -500,16 +500,16 @@
 
         const linkedin_part = document.getElementById("linkedin_part")
         const linkedin_part1 = document.getElementById("linkedin_part1")
-        const linkedin_part2 = document.getElementById("linkedin_part2")
+        // const linkedin_part2 = document.getElementById("linkedin_part2")
         
 
         const resume_part = document.getElementById("resume_part")
         const resume_part1 = document.getElementById("resume_part1")
-        const resume_part2 = document.getElementById("resume_part2")
+        // const resume_part2 = document.getElementById("resume_part2")
 
         const fair_part = document.getElementById("fair_part")
         const fair_part1 = document.getElementById("fair_part1")
-        const fair_part2 = document.getElementById("fair_part2")
+        // const fair_part2 = document.getElementById("fair_part2")
 
 
         
@@ -522,10 +522,14 @@
 
         // const buttons = [schoolButton, travelButton, jobButton, medButton, houseButton]
 
+        // const buttons = [opt_part, opt_part1, opt_part2, 
+        // linkedin_part, linkedin_part1, linkedin_part2,  
+        // resume_part, resume_part1, resume_part2,
+        // fair_part, fair_part1, fair_part2]
         const buttons = [opt_part, opt_part1, opt_part2, 
-        linkedin_part, linkedin_part1, linkedin_part2,  
-        resume_part, resume_part1, resume_part2,
-        fair_part, fair_part1, fair_part2]
+        linkedin_part, linkedin_part1,   
+        resume_part, resume_part1, 
+        fair_part, fair_part1]
 
 
         const externalFrame = document.getElementById("external-frame")
@@ -553,27 +557,27 @@
                 case "linkedin_part1":
                     destin = "career-opt.html"
                     break
-                case "linkedin_part2":
-                    destin = "career-opt.html"
-                    break
+                // case "linkedin_part2":
+                //     destin = "career-opt.html"
+                //     break
                 case "resume_part":
                     destin = "career-resume.html"
                     break
                 case "resume_part1":
                     destin = "career-resume.html"
                     break
-                case "resume_part2":
-                    destin = "career-resume.html"
-                    break
+                // case "resume_part2":
+                //     destin = "career-resume.html"
+                //     break
                 case "fair_part":
                     destin = "career-careerfair.html"
                     break
                 case "fair_part1":
                     destin = "career-careerfair.html"
                     break
-                case "fair_part2":
-                    destin = "career-careerfair.html"
-                    break
+                // case "fair_part2":
+                //     destin = "career-careerfair.html"
+                //     break
                 
             }
             externalFrame.setAttribute("src", destin);
