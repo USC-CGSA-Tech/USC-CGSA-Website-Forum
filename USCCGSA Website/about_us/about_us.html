@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta http-Equiv="Cache-Control" Content="no-cache" />
+    <meta http-Equiv="Pragma" Content="no-cache" />
+    <meta http-Equiv="Expires" Content="0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="我们是南加州大学中国研究生学生会，简称USC-CGSA。我们的宗旨是为南加大的中国研究生，博士生，访问学者提供一个专注于就业，学术和社交相关的平台，并为广大留学生提供力所能及的留学问题，法律，手续方面的帮助。">
@@ -160,13 +163,11 @@
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        <a id="packup_part1" style="color: rgb(220,95,67);">组织介绍</a>
+                                        <a id="org_intro" style="color: rgb(220,95,67);"  onclick="changeTo(this)">组织介绍</a>
                                     </div>
-
-                                </div>
-                                
-                                       
+                                </div>        
                             </div>   
+
                             <!-- Panel  2 -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -179,11 +180,11 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <a id="travel_part1" style="color: rgb(220,95,67);">现任主席团成员</a>
+                                        <a id="xianren" style="color: rgb(220,95,67);"  onclick="changeTo(this)">现任主席团成员</a>
                                         
                                     </div>
                                     <div id="travel_part2" class="panel-body">
-                                        <a id="travel_part2" style="color: rgb(220,95,67);">毕业主席团成员</a>
+                                        <a id="biye" style="color: rgb(220,95,67);"  onclick="changeTo(this)">毕业主席团成员</a>
                                         
                                     </div>
                                 </div>
@@ -192,7 +193,7 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a id="career_part" data-toggle="collapse" data-parent="#accordion"
+                                        <a id="intro" data-toggle="collapse" data-parent="#accordion"
                                             href="#collapseThree">
                                         部门介绍
                                         </a>
@@ -200,22 +201,22 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <a id="career_part1" style="color: rgb(220,95,67);">技术部</a>
+                                        <a id="jishu" style="color: rgb(220,95,67);"  onclick="changeTo(this)">技术部</a>
                                     </div>
                                     <div class="panel-body">
-                                        <a id="career_part2" style="color: rgb(220,95,67);">行政部</a>
+                                        <a id="xinzheng" style="color: rgb(220,95,67);"  onclick="changeTo(this)">行政部</a>
                                     </div>
                                     <div class="panel-body">
-                                        <a id="career_part2" style="color: rgb(220,95,67);">宣传部</a>
+                                        <a id="xuanchuan" style="color: rgb(220,95,67);"  onclick="changeTo(this)">宣传部</a>
                                     </div>
                                     <div class="panel-body">
-                                        <a id="career_part2" style="color: rgb(220,95,67);">活动部</a>
+                                        <a id="huodong" style="color: rgb(220,95,67);"  onclick="changeTo(this)">活动部</a>
                                     </div>
                                     <div class="panel-body">
-                                        <a id="career_part2" style="color: rgb(220,95,67);">外联部</a>
+                                        <a id="wailian" style="color: rgb(220,95,67);"  onclick="changeTo(this)">外联部</a>
                                     </div>
                                     <div class="panel-body">
-                                        <a id="career_part2" style="color: rgb(220,95,67);">职业发展部</a>
+                                        <a id="zhiyefazhan" style="color: rgb(220,95,67);" onclick="changeTo(this)">职业发展部</a>
                                     </div>
                                 </div>
                             </div>
@@ -224,8 +225,8 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a id="house_part" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapseFive">
+                                        <a id="contact_us" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseFive" onclick="changeTo(this)">
                                         联系我们
                                         </a>
                                     </h4>
@@ -303,7 +304,7 @@
                                     <li><a href="https://www.linkedin.com/in/youwangdeng/" target="_blank">邓友旺</a></li>
                                     <li><a href="https://github.com/Attriumph" target="_blank">韩灵全</a></li> 
                                     <li><a href="https://github.com/Weizhongjin" target="_blank">金炜众</a></li>
-                                    <li><a href="https://www.linkedin.com/in/zewei-liu-a25425104/" target="_blank">刘泽玮</a></li>
+                                    <li><a href="https://www.linkedin.com/in/zewei-liu-a25425104/" target="_blank">刘则玮</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -331,6 +332,7 @@
     </section>
     <!--/#bottom-->
 
+
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
@@ -341,7 +343,67 @@
         </div>
     </footer>
     <!--/#footer-->
+    <script>
+        /*********************
+        Change Link
+        *********************/
+        function changeTo(e){
+            let buttonId = e.id;
+            console.log(buttonId);
+            let showFrame = document.getElementById("external-frame");
+            let destin = "";
+            switch(buttonId) {
+                case "org_intro":
+                    destin = "intro_cgsa.html";
+                    break;
+                case "xianren":
+                    destin = "intro_chairs2.html";
+                    break;
+                case "jishu":
+                    destin = "jishu.html";
+                    break;
+                case "xinzheng":
+                    destin = "xinzheng.html";//case ""
+                    break;
+                case "wailian":
+                    destin = "wailian.html";
+                    break;
+                case "xuanchuan":
+                    destin = "xuanchuan.html";
+                    break;
+                case "contact_us":
+                    destin = "contact_us.html";
+                    break;
+                case "huodong":
+                    destin = "huodong.html";
+                    break;
+                case "zhiyefazhan":
+                    destin = "zhiye.html";
+                    break;
+                case "biye":
+                    destin = "biyechair.html";
+                    break;
 
+            }
+            showFrame.setAttribute("src", destin);
+        }
+
+        /*********************
+        Adjust Height
+        *********************/
+        function setIframeHeight(iframe) {
+            iframe.removeAttribute("height");
+            if (iframe) {
+                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                if (iframeWin.document.body) {
+                    iframe.height =  iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                }
+            }
+        };
+
+        const externalFrame = document.getElementById("external-frame")
+        externalFrame.onload = ()=> {setIframeHeight(externalFrame)}
+    </script>
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.prettyPhoto.js"></script>
