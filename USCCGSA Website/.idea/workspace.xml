@@ -4,6 +4,7 @@
     <list default="true" id="2c10a86c-2eb7-4c78-ba07-7b2c4918da96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about_us/biyechair.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_us/biyechair.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about_us/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_us/contact_us.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,35 +19,35 @@
     <session id="1376717748">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
-          <entry key="html" value="7" />
+          <entry key="html" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="7" />
+          <entry key="HTML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="376" />
+          <entry key="html" value="380" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="376" />
+          <entry key="HTML" value="380" />
         </counts>
       </usages-collector>
     </session>
@@ -56,26 +57,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-512">
-              <caret line="53" column="42" lean-forward="true" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/about_us/biyechair.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="68" column="60" lean-forward="true" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+            <state relative-caret-position="15">
+              <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_us/about_us.css">
+        <entry file="file://$PROJECT_DIR$/about_us/about_us.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/about_us/contact_us.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/about_us/biyechair.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -109,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="8940">
               <caret line="596" column="1" selection-start-line="596" selection-start-column="1" selection-end-line="596" selection-end-column="1" />
             </state>
           </provider>
@@ -118,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about_us/wailian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
+            <state relative-caret-position="1200">
               <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
             </state>
           </provider>
@@ -155,6 +161,7 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/about_us/wailian.html" />
         <option value="$PROJECT_DIR$/about_us/biyechair.html" />
+        <option value="$PROJECT_DIR$/about_us/contact_us.html" />
       </list>
     </option>
   </component>
@@ -182,6 +189,11 @@
             <path>
               <item name="USCCGSA Website" type="b2602c69:ProjectViewProjectNode" />
               <item name="USCCGSA Website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="USCCGSA Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="USCCGSA Website" type="462c0819:PsiDirectoryNode" />
+              <item name="about_us" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -226,18 +238,20 @@
       <updated>1554597681887</updated>
       <workItem from="1554597683012" duration="961000" />
       <workItem from="1554675524651" duration="2138000" />
-      <workItem from="1554769129267" duration="4032000" />
+      <workItem from="1554769129267" duration="4755000" />
+      <workItem from="1554841674853" duration="234000" />
+      <workItem from="1554922005110" duration="428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7131000" />
+    <option name="totallyTimeSpent" value="8516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24594785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23467231" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -263,6 +277,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/career/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3333" selection-start-line="6" selection-start-column="3333" selection-end-line="6" selection-end-column="3333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about_us/about_us.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/about_us/intro_cgsa.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -283,6 +311,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8940">
+          <caret line="596" column="1" selection-start-line="596" selection-start-column="1" selection-end-line="596" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about_us/wailian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/about_us/xinzheng.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -290,45 +332,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about_us/wailian.html">
+    <entry file="file://$PROJECT_DIR$/about_us/biyechair.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+        <state relative-caret-position="421">
+          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about_us/about_us.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-512">
-          <caret line="53" column="42" lean-forward="true" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+        <state relative-caret-position="15">
+          <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/about_us/contact_us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="596" column="1" selection-start-line="596" selection-start-column="1" selection-end-line="596" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/career/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3333" selection-start-line="6" selection-start-column="3333" selection-end-line="6" selection-end-column="3333" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about_us/about_us.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about_us/biyechair.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="68" column="60" lean-forward="true" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
