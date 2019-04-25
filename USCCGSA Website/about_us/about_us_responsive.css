@@ -1,0 +1,15 @@
+.blog-content {
+    padding:3% !important;
+}
+
+.panel a {
+    cursor: pointer;
+}
+
+.sub-title {
+    font-size: 2rem;
+}
+
+.iframe-img-cell {
+    height:380px !important;
+}

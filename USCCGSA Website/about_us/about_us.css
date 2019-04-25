@@ -7,6 +7,10 @@ header {
     text-align: center;
 }
 
+.blog-content {
+  padding: 3% !important;
+}
+
 .desc {
     display: inline-block;
     position: relative;
@@ -22,10 +26,9 @@ header {
 
 p {
     position:relative;
-    left: 40px;
-
-    width:90%;
-    font-size: 20px;
+    left: 0px;
+    width:100%;
+    font-size: 1rem;
 }
 
 img {
