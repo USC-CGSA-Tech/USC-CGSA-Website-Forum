@@ -35,16 +35,20 @@ h6 {
 }
 
 h1 {
-  font-size: 36px;
+/*  font-size: 36px;*/
+  font-size: 2.25 rem;
+
   /*    color: #fff;*/
 }
 
 h2 {
-  font-size: 20px;
+/*  font-size: 20px;*/
+  font-size: 1.25 rem;
 }
 
 h3 {
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   color: #787878;
   font-weight: 400;
   line-height: 24px;
@@ -56,7 +60,8 @@ img {
 }
 
 h4 {
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
 }
 
 a {
@@ -116,7 +121,8 @@ a:focus {
 }
 
 .center h2 {
-  font-size: 36px;
+/*  font-size: 36px;*/
+  font-size: 2.25 rem;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -144,7 +150,8 @@ body > section {
 }
 
 .lead {
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   line-height: 24px;
   font-weight: 400;
 }
@@ -188,7 +195,8 @@ body > section {
   color: #fff;
   margin: 0;
   text-align: center;
-  font-size: 64px;
+/*  font-size: 64px;*/
+  font-size: 4 rem;
 }
 
 /*************************
@@ -318,7 +326,8 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-brand {
-  font-size: 35px;
+/*  font-size: 35px;*/
+  font-size: 2.25 rem;
   line-height: 50px;
   color: #fff;
 }
@@ -391,7 +400,8 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .carousel-content {
-  font-size: 18px;
+/*  font-size: 18px;*/
+  font-size: 1.125 rem;
   font-weight: 400;
   color: #fff;
   line-height: 28px;
@@ -402,7 +412,8 @@ input.search-form:hover {
 }
 
 #main-slider .carousel h1 {
-  font-size: 64px;
+/*  font-size: 64px;*/
+  font-size: 4 rem;
   font-weight: 700;
   margin: 0 0 20px;
   color: #fff;
@@ -416,7 +427,8 @@ input.search-form:hover {
   border-radius: 4px;
   margin-top: 40px;
   display: inline-block;
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
   margin-right: 10px;
   border: 1px solid #d71d04;
 }
@@ -555,7 +567,8 @@ input.search-form:hover {
   line-height: 40px;
   color: #d0d0d0;
   border: 1px solid #d0d0d0;
-  font-size: 20px;
+/*  font-size: 20px;*/
+  font-size: 1.25 rem;
   border-radius: 4px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -569,14 +582,16 @@ input.search-form:hover {
 }
 
 .features .feature-wrap h2 {
-  font-size: 24px;
+/*  font-size: 24px;*/
+  font-size: 1.5 rem;
   color: #333;
   margin: 0;
   margin-bottom: 24px;
 }
 
 .features .feature-wrap p {
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   margin: 0;
   line-height: 26px;
   color: #707070;
@@ -666,7 +681,8 @@ input.search-form:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #707070;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   line-height: 26px;
 }
 
@@ -679,7 +695,8 @@ input.search-form:hover {
 }
 
 .services-wrap h3 {
-  font-size: 20px;
+/*  font-size: 20px;*/
+  font-size: 1.25 rem;
   margin: 0 0 15px;
   color: #333333;
   font-weight: 700;
@@ -712,7 +729,8 @@ input.search-form:hover {
 }
 
 #middle h2 {
-  font-size: 48px;
+/*  font-size: 48px;*/
+  font-size: 3 rem;
   color: #ffffff;
 }
 
@@ -787,7 +805,8 @@ span.bar-width::after {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  font-size: 12px;
+/*  font-size: 12px;*/
+  font-size: 0.75 rem;
   font-weight: 700;
   top: -40px;
   border-radius: 2px;
@@ -893,7 +912,8 @@ span.bar-width::after {
 a.accordion-toggle i {
   width: 45px;
   line-height: 44px;
-  font-size: 20px;
+/*  font-size: 20px;*/
+  font-size: 1.25 rem;
   margin-top: -10px;
   text-align: center;
   margin-right: -15px;
@@ -948,7 +968,8 @@ a.accordion-toggle i {
   border-radius: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  font-size: 20px;
+/*  font-size: 20px;*/
+  font-size: 1.25 rem;
   border: 2px solid #fff;
 }
 
@@ -995,7 +1016,8 @@ a.accordion-toggle i {
 
 .testimonial-inner {
   color: #858586;
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
 }
 
 .testimonial-inner .pull-left {
@@ -1059,7 +1081,8 @@ a.accordion-toggle i {
 .contact-info i {
   width: 60px;
   height: 60px;
-  font-size: 40px;
+/*  font-size: 40px;*/
+  font-size: 2.5 rem;
   line-height: 60px;
   color: #fff;
   background: #000;
@@ -1115,7 +1138,8 @@ a.accordion-toggle i {
 
 .committee-content{
   text-align: center;
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
   line-height: 1.3;
   letter-spacing: 1.3px;
   width : 330px;
@@ -1151,13 +1175,15 @@ a.accordion-toggle i {
 
 .about-content {
   color: #989898;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   line-height: 26px;
   margin-top: 80px;
 }
 
 .about-content h2 {
-  font-size: 48px;
+/*  font-size: 48px;*/
+  font-size: 3 rem;
   color: #333333;
   font-weight: 700;
   margin: 0 0 25px;
@@ -1178,7 +1204,8 @@ a.accordion-toggle i {
   background: #fff;
   text-align: center;
   color: #989898;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 5px;
@@ -1194,7 +1221,8 @@ a.accordion-toggle i {
   padding: 30px 0;
 }
 .single-team h4 {
-  font-size: 20px;
+/*  font-size: 20px;*/
+  font-size: 1.25 rem;
   font-weight: 700;
   color: #333;
   margin-top: 0;
@@ -1252,7 +1280,8 @@ a.accordion-toggle i {
 .request h4 a {
   background: #d71d04;
   color: #fff;
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
   font-weight: normal;
   border-radius: 3px;
   padding: 5px 15px;
@@ -1334,7 +1363,8 @@ a.accordion-toggle i {
 
 .text-left {
   color: #ffffff;
-  font-size: 12px;
+/*  font-size: 12px;*/
+  font-size: 0.75 rem;
   margin-top: 15px;
 }
 
@@ -1360,7 +1390,8 @@ a.accordion-toggle i {
 
 .portfolio-filter > li a {
   background: none repeat scroll 0 0 #ffffff;
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
   font-weight: 400;
   margin-right: 20px;
   text-transform: uppercase;
@@ -1468,7 +1499,8 @@ section.pricing {
 }
 .single-pricing h1 {
   font-weight: 700;
-  font-size: 80px;
+/*  font-size: 80px;*/
+  font-size: 5 rem;
   position: relative;
   display: inline-block;
   padding: 0 50px 0 15px;
@@ -1477,7 +1509,8 @@ section.pricing {
 .single-pricing h1 span {
   position: absolute;
   top: 10px;
-  font-size: 26px;
+/*  font-size: 26px;*/
+  font-size: 1.625 rem;
   left: 0;
   text-transform: lowercase;
 }
@@ -1533,9 +1566,11 @@ section.pricing {
 
 #contact-page .contact-form .form-group label {
   color: #989898;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   font-weight: 300;
-  font-size: 12px;
+/*  font-size: 12px;*/
+  font-size: 0.75 rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -1553,7 +1588,8 @@ section.pricing {
 }
 
 .form-group button {
-  font-size: 15px;
+/*  font-size: 15px;*/
+  font-size: 1 rem;
   padding: 15px 30px;
 }
 
@@ -1573,13 +1609,15 @@ textarea#message {
 }
 
 .large-title h2 {
-  font-size: 48px;
+/*  font-size: 48px;*/
+  font-size: 3 rem;
   font-weight: 700;
   color: #222;
 }
 
 .large-title p {
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   line-height: 26px;
   color: #989898;
   font-weight: 300;
@@ -1625,7 +1663,8 @@ aside .widget {
 .popular_post ul li p {
   margin-top: 14px;
   color: #5c5c5c;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
 }
 
 .blog_category {
@@ -1728,7 +1767,8 @@ ul.faq li span.number {
   text-align: center;
   background: #34495e;
   color: #fff;
-  font-size: 24px;
+/*  font-size: 24px;*/
+  font-size: 1.5 rem;
 }
 
 ul.faq li > div {
@@ -1787,7 +1827,8 @@ ul.faq li > div h3 {
 
 .blog .blog-item .blog-content h2 {
   margin-top: 0;
-  font-size: 22px;
+/*  font-size: 22px;*/
+  font-size: 1.375 rem;
 }
 
 .blog .blog-item .blog-content h2 a {
@@ -1817,13 +1858,15 @@ ul.faq li > div h3 {
 .blog .blog-item .blog-content h3 {
   color: #989898;
   font-weight: 300;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   line-height: 26px;
   margin-bottom: 20px;
 }
 
 .blog .blog-item .blog-content h4 {
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
 }
 
 .post-tags {
@@ -1838,7 +1881,8 @@ ul.faq li > div h3 {
   background: #f5f5f5;
   border-top: 1px solid #fff;
   display: block;
-  font-size: 12px;
+/*  font-size: 12px;*/
+  font-size: 0.75 rem;
   overflow: hidden;
   padding: 5px;
   text-align: left;
@@ -1857,7 +1901,8 @@ ul.faq li > div h3 {
 }
 
 .blog .blog-item .entry-meta > span a {
-  font-size: 12px;
+/*  font-size: 12px;*/
+  font-size: 0.75 rem;
   margin-left: 3px;
   font-weight: 300;
   color: #888;
@@ -1868,7 +1913,8 @@ ul.pagination {
 }
 ul.pagination > li > a {
   border-radius: 5px;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   height: 32px;
   width: 32px;
   padding: 0;
@@ -1933,7 +1979,8 @@ ul.pagination > li:last-child > a {
   line-height: 48px;
   margin: 0;
   padding: 0 15px;
-  font-size: 20px;
+/*  font-size: 20px;*/
+  font-size: 1.25 rem;
   background-color: transparent;
 }
 .widget.search form button i {
@@ -2027,7 +2074,8 @@ ul.sidebar-gallery {
   line-height: 45px;
   background-color: #d8d8d8;
   color: #6d7784;
-  font-size: 18px;
+/*  font-size: 18px;*/
+  font-size: 1.125 rem;
   border-radius: 3px;
 }
 
@@ -2083,7 +2131,8 @@ ul.sidebar-gallery {
   color: #989898;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 12px;
+/*  font-size: 12px;*/
+  font-size: 0.75 rem;
   border-radius: 2px;
   margin-right: 2px;
 }
@@ -2149,7 +2198,8 @@ ul.sidebar-gallery {
   padding: 30px;
   border-radius: 4px;
   color: #989898;
-  font-size: 16px;
+/*  font-size: 16px;*/
+  font-size: 1 rem;
   font-weight: 300;
   line-height: 28px;
 }
@@ -2158,7 +2208,8 @@ ul.sidebar-gallery {
   position: absolute;
   right: 0;
   bottom: -35px;
-  font-size: 12px;
+/*  font-size: 12px;*/
+  font-size: 0.75 rem;
 }
 
 .comment-count a {
@@ -2175,7 +2226,8 @@ ul.sidebar-gallery {
 }
 
 .comments .single-comment .comment-content h5 {
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
   color: #333333;
   margin: 0 0 15px;
 }
@@ -2227,7 +2279,8 @@ ul.sidebar-gallery {
 #error h1 {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 250px;
+/*  font-size: 250px;*/
+  font-size: 15.625 rem;
   line-height: 190px;
   margin-top: 0;
   margin-bottom: 40px;
@@ -2235,7 +2288,8 @@ ul.sidebar-gallery {
 
 #error p {
   color: #ffffff;
-  font-size: 48px;
+/*  font-size: 48px;*/
+  font-size: 3 rem;
   font-weight: 600;
   margin-bottom: 20px;
   line-height: 50px;
@@ -2269,7 +2323,8 @@ shortcodes page css
 
 .shortcode-item h2 {
   color: #4e4e4e;
-  font-size: 24px;
+/*  font-size: 24px;*/
+  font-size: 1.5 rem;
   margin-bottom: 22px;
   margin-top: 0;
   font-weight: 600;
@@ -2284,14 +2339,16 @@ shortcodes page css
 #bottom {
   background: #f5f5f5;
   border-bottom: 5px solid #d71d04;
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
 }
 
 #bottom h3 {
   margin-top: 0;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-size: 14px;
+/*  font-size: 14px;*/
+  font-size: 0.875 rem;
   color: #000;
   font-weight: 700;
 }

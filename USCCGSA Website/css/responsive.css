@@ -26,9 +26,12 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar-brand{
 <<<<<<< HEAD
-    font-size: 27px !important;
+/*    font-size: 27px !important;*/
+  font-size: 1.6875 rem !important;
 =======
-    font-size: 28px !important;
+/*    font-size: 28px !important;*/
+  font-size: 1.75 rem !important;
+      
 >>>>>>> b096bbfac294dc2c840aa23eef22987791ceb6a7
   }
   .navbar-brand >img{
@@ -55,7 +58,8 @@
   }
 
   .recent-work-wrap .recent-work-inner h3 a {
-    font-size: 20px;
+/*    font-size: 20px;*/
+      font-size: 1.25 rem;
   }
 
   .recent-work-wrap .overlay{
@@ -68,12 +72,14 @@
 
   .feature-wrap h2, 
   .single-services h2 {
-    font-size: 18px;
+/*    font-size: 18px;*/
+      font-size: 1.125 rem;
   }
 
   .feature-wrap h3, 
   .single-services h3{
-    font-size: 14px;
+/*    font-size: 14px;*/
+      font-size: 0.875 rem;
   }
 
   .tab-wrap .media .parrent.pull-left{
@@ -121,9 +127,11 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-brand{
 <<<<<<< HEAD
-    font-size: 22px !important;
+/*    font-size: 22px !important;*/
+      font-size: 1.375 rem;
 =======
-    font-size: 23px !important;
+/*    font-size: 23px !important;*/
+      font-size: 1.4375 rem;
 >>>>>>> b096bbfac294dc2c840aa23eef22987791ceb6a7
   }
   .navbar-brand >img{
@@ -133,7 +141,8 @@
     padding: 15px 0 !important;
   }
   .navbar-inverse .navbar-nav > li > a{
-    font-size: 12px !important;
+/*    font-size: 12px !important;*/
+    font-size: 0.75 rem !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
@@ -158,11 +167,13 @@
   }
 
   #main-slider .carousel h1 {
-    font-size: 25px;
+/*    font-size: 25px;*/
+      font-size: 1.5625 rem;
   }
 
   #main-slider .carousel h2 {
-    font-size: 20px;
+/*    font-size: 20px;*/
+      font-size: 1.25 rem;
   }
 
   .tab-wrap .media .parrent.pull-left, 
@@ -185,7 +196,8 @@
   }
 
   .recent-work-wrap .recent-work-inner h3 a {
-    font-size: 20px;
+/*    font-size: 20px;*/
+      font-size: 1.25 rem;
   }
 
   .sinlge-skill{
@@ -194,11 +206,13 @@
   } 
 
   .sinlge-skill p em {
-    font-size: 25px;
+/*    font-size: 25px;*/
+      font-size: 1.5625 rem;
   }
 
   .sinlge-skill p {
-    font-size: 16px;
+/*    font-size: 16px;*/
+      font-size: 1 rem;
   }
 
   .team-bar .first-one-arrow {
@@ -222,7 +236,8 @@
   }
 
   .blog .blog-item .entry-meta > span a{
-    font-size: 10px;
+/*    font-size: 10px;*/
+      font-size: 0.625 rem;
   }
 }
 
@@ -232,7 +247,8 @@
       float: right;
     }
     .navbar-brand{
-      font-size: 25px !important;
+/*      font-size: 25px !important;*/
+        font-size: 1.5625 rem;
     }
     .container{
       line-height: 22px;
@@ -254,11 +270,13 @@
         background-color: transparent;
     }
     #error h1{
-        font-size: 60px;
+/*        font-size: 60px;*/
+        font-size: 3.75 rem;
         line-height: 60px;
     }
     #error p{
-        font-size: 30px;
+/*        font-size: 30px;*/
+        font-size: 1.875 rem;
         line-height: 40px;
     }
     .single-pricing.featured{
@@ -318,7 +336,8 @@
     }
 
   .top-number{
-    font-size: 14px;
+/*    font-size: 14px;*/
+      font-size: 0.875 rem;
   }
 
   input.search-form:hover {
@@ -330,21 +349,25 @@
   }
 
   #main-slider .carousel h1 {
-    font-size: 25px;
+/*    font-size: 25px;*/
+      font-size: 1.5625 rem;
   }
 
   #main-slider .carousel h2 {
-    font-size: 16px;
+/*    font-size: 16px;*/
+      font-size: 1 rem;
   }
 
   .feature-wrap h2, 
   .single-services h2 {
-    font-size: 18px;
+/*    font-size: 18px;*/
+      font-size: 1.125 rem;
   }
 
   .feature-wrap h3, 
   .single-services h3{
-    font-size: 14px;
+/*    font-size: 14px;*/
+      font-size: 0.875 rem;
   }
 
 
@@ -394,7 +417,8 @@
   }
 
   .clients-area h1 {
-    font-size: 25px;
+/*    font-size: 25px;*/
+      font-size: 1.5625 rem;
   }
 
   .portfolio-item, 
@@ -437,7 +461,8 @@
 
 @media (max-width: 426px) {
   .navbar-brand{
-    font-size: 23px !important;
+/*    font-size: 23px !important;*/
+      font-size: 1.4375 rem !important;
   }
   .navbar-brand >img{
     width: 36px;
@@ -446,7 +471,8 @@
 
 @media (max-width: 320px) {
   .navbar-brand{
-    font-size: 20px !important;
+/*    font-size: 20px !important;*/
+      font-size: 1.25 rem !important;
   }
   .navbar-brand >img{
     width: 30px;

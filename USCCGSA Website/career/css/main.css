@@ -23,7 +23,7 @@ h6 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: calc(36/16) rem;
 /*    color: #fff;*/
 }
 

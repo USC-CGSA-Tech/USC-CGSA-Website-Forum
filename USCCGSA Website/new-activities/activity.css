@@ -2,7 +2,8 @@
     font-family: sans-serif;
 }
 header {
-    font-size: 30px;
+/*    font-size: 30px;*/
+    font-size: 1.875 rem;
     color:rgb(220,95,67);
     text-align: center;
 }
@@ -12,7 +13,8 @@ header {
     position: relative;
     top:30px;
     left:10px;
-    font-size: 16px;
+/*    font-size: 16px;*/
+    font-size: 1 rem;
     margin:0;
     padding: 5px 10px;
     color:white;
@@ -25,7 +27,8 @@ p {
     left: 40px;
     top:50px;
     width:90%;
-    font-size: 20px;
+/*    font-size: 20px;*/
+    font-size: 1.25 rem;
 }
 
 img {
